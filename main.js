@@ -43,7 +43,8 @@ function notePOST(req,res){
 	db.serialize(() => {
 	db.run("INSERT INTO Note(text) VALUES('"+text+"')");
 	});
-	res.json({"text":text});
+	res.json({"Added":text});
+	lLog("post '"+text+"'");
 }
 function noteGETkey(req,res){
 	var noteKey = req.params.key;
@@ -74,6 +75,7 @@ function notePUTkey(req,res){
 			}
 		});
 	});
+	lLog("Updated: "+noteKey);
 	res.json("Updated");
 	
 }
