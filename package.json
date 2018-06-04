@@ -1,0 +1,25 @@
+{
+  "name": "note.api",
+  "version": "1.0.0",
+  "description": "note api in a restfull manner",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+	"start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "api",
+    "note"
+  ],
+  "author": "Lucas Schinnerl",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "sqlite3": "^4.0.0"
+  }
+}
